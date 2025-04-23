@@ -1,4 +1,5 @@
-![chetorchatkonim.ir](https://raw.githubusercontent.com/rezaghz/chetorchatkonim/refs/heads/main/img/logo.png)
+
+![ChatGPT Image Apr 23, 2025, 07_53_53 PM (1)](https://github.com/user-attachments/assets/cf4c030a-619c-4217-9161-6516a4fdadfa)
 
 # چطور چت کنیم ؟
 
