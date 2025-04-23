@@ -34,8 +34,9 @@
     <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/font-face.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-[#E6E9EF] min-h-screen font-['Vazirmatn']">
+<body class="bg-[#E6E9EF] min-h-screen">
     <header>
         <!-- Navigation -->
         <nav class="bg-[#6CC1E3] text-white fixed w-full top-0 z-50" role="navigation" aria-label="منوی اصلی">
@@ -46,6 +47,7 @@
                     <!-- Desktop Menu -->
                     <div class="hidden md:block">
                         <ul class="flex space-x-8 space-x-reverse">
+                            <li><a href="#" id="whyModalBtn" class="hover:text-gray-100 transition-colors" aria-label="دلیل ساخت سایت">چرا اینجا رو ساختم؟</a></li>
                             <li><a href="https://github.com/rezaghz/chetorchatkonim" class="hover:text-gray-100 transition-colors" aria-label="مخزن گیت هاب">مخزن گیت هاب</a></li>
                         </ul>
                     </div>
@@ -59,6 +61,7 @@
                 <!-- Mobile Menu Items -->
                 <div id="mobileMenu" class="hidden md:hidden bg-[#6CC1E3] py-4">
                     <ul class="flex flex-col space-y-4">
+                        <li><a href="#" id="whyModalBtnMobile" class="block hover:text-gray-100 transition-colors" onclick="toggleMenu()" aria-label="دلیل ساخت سایت">چرا اینجا رو ساختم؟</a></li>
                         <li><a href="https://github.com/rezaghz/chetorchatkonim" class="block hover:text-gray-100 transition-colors" onclick="toggleMenu()" aria-label="مخزن گیت هاب">مخزن گیت هاب</a></li>
                     </ul>
                 </div>
@@ -111,7 +114,51 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div id="whyModal" class="fixed inset-0 z-50 hidden" aria-modal="true" role="dialog">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+        
+        <!-- Modal Content -->
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center">
+                <div class="relative transform overflow-hidden rounded-lg bg-white text-right shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                    <!-- Close Button -->
+                    <button id="closeModal" class="absolute left-4 top-4 text-gray-400 hover:text-gray-500" aria-label="بستن">
+                        <span class="sr-only">بستن</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    
+                    <!-- Modal Body -->
+                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div class="sm:flex sm:items-start">
+                            <div class="mt-3 text-center sm:mt-0 sm:text-right">
+                                <h3 class="text-xl font-semibold leading-6 text-gray-900 mb-4">دلیل ساخت این سایت</h3>
+                                <div class="mt-2 text-gray-700 leading-relaxed">
+                                    <p class="mb-4">این روزا بیشتر ارتباط‌هامون توی چته...</p>
+                                    <p class="mb-4">اما کسی واقعاً بهمون یاد نداده چطور باید چت کنیم.</p>
+                                    <p class="mb-4">نه تو مدرسه، نه تو خانواده، نه حتی تو کار...</p>
+                                    <p class="mb-4">هیچی درباره‌ی آداب گفت‌وگوی دیجیتال نگفتن.</p>
+                                    <p class="mb-4">نتیجه‌ش؟ دلخوری‌های الکی، سوتفاهم، فاصله گرفتن آدما.</p>
+                                    <p class="mb-4">من اینجا رو ساختم چون فکر می‌کنم</p>
+                                    <p class="mb-4">مودب بودن، شنونده بودن، و احترام گذاشتن</p>
+                                    <p class="mb-4">فقط مخصوص دنیای واقعی نیست.</p>
+                                    <p class="mb-4">اینجا قراره با شوخی، کنایه، و یه‌ذره جدیت</p>
+                                    <p class="mb-4">یاد بگیریم چطور چت کنیم</p>
+                                    <p>نه فقط حرف بزنیم — واقعاً گفتگو کنیم.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/etiquettes.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html> 
