@@ -1,5 +1,7 @@
+<p align="center">
 
-![ChatGPT Image Apr 23, 2025, 07_53_53 PM (1)](https://github.com/user-attachments/assets/cf4c030a-619c-4217-9161-6516a4fdadfa)
+<img src="https://github.com/user-attachments/assets/cf4c030a-619c-4217-9161-6516a4fdadfa" alt="Description" width="300">
+</p>
 
 # چطور چت کنیم ؟
 
