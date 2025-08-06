@@ -35,4 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         toolsContainer.querySelector('.grid').appendChild(card);
     });
+
+    updateContributors();
 }); 
