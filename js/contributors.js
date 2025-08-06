@@ -13,6 +13,7 @@ async function updateContributors() {
     const a = document.createElement("a");
     a.href = user.html_url;
     a.target = "_blank";
+    a.className = "mx-2";
 
     const element = document.createElement("img");
     element.className = "rounded-full w-6";
